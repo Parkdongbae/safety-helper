@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+  --color-brand-50: #eefcf5;
+  --color-brand-100: #d6f7e6;
+  --color-brand-300: #7fe3b4;
+  --color-brand-500: #22c07d;
+  --color-brand-600: #159a63;
+  --color-brand-700: #127a50;
+  --color-ink: #1e293b;
+  --color-paper: #f8fafc;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 고대비 모드 */
+html.high-contrast {
+  filter: contrast(1.25) saturate(1.15);
+}
+html.high-contrast body {
+  background-color: #ffffff;
+  color: #000000;
+}
+html.high-contrast .card-surface {
+  background-color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+/* 애니메이션 감소 */
+html.reduce-motion *,
+html.reduce-motion *::before,
+html.reduce-motion *::after {
+  animation-duration: 0.001s !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001s !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+  }
+}
+
+/* 힘 시험 애니메이션 */
+@keyframes shake-soft {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+@keyframes shake-hard {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-8px, 2px) rotate(-2deg); }
+  40% { transform: translate(8px, -2px) rotate(2deg); }
+  60% { transform: translate(-6px, 2px) rotate(-1deg); }
+  80% { transform: translate(6px, -2px) rotate(1deg); }
+}
+@keyframes press-down {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.88); }
+}
+@keyframes stretch-out {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(1.12); }
+}
+@keyframes twist {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(6deg); }
+}
+@keyframes vibrate {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(2px, -2px); }
+  40% { transform: translate(-2px, 2px); }
+  60% { transform: translate(2px, 1px); }
+  80% { transform: translate(-1px, -2px); }
+}
+@keyframes drop-impact {
+  0% { transform: translateY(-40px); }
+  60% { transform: translateY(0); }
+  75% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.anim-shake-soft { animation: shake-soft 0.5s ease-in-out; }
+.anim-shake-hard { animation: shake-hard 0.6s ease-in-out; }
+.anim-press { animation: press-down 0.8s ease-in-out; }
+.anim-stretch { animation: stretch-out 0.8s ease-in-out; }
+.anim-twist { animation: twist 0.7s ease-in-out; }
+.anim-vibrate { animation: vibrate 0.6s linear; }
+.anim-impact { animation: drop-impact 0.9s ease-in; }
+
+/* 게이지 공통 트랜지션 */
+.gauge-fill {
+  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes gauge-grow {
+  from { width: 0; }
+  to { width: var(--gauge-w); }
+}
+.gauge-animate {
+  animation: gauge-grow 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* 키보드 포커스 링 */
+.ring-focus:focus-visible {
+  outline: 3px solid var(--color-brand-500);
+  outline-offset: 2px;
+}
+
+/* 스크롤바 얇게 */
+.thin-scroll::-webkit-scrollbar { height: 8px; width: 8px; }
+.thin-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+
+/* ===== LEVEL 1 연출 (작업 1-1, 1-4) ===== */
+@keyframes ft-shake-soft-loop {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-1.5px, 1px); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(-1px, -1px); }
+}
+@keyframes ft-shake-hard-loop {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-4px, 2px) rotate(-1deg); }
+  40% { transform: translate(4px, -2px) rotate(1deg); }
+  60% { transform: translate(-3px, -1px) rotate(-0.5deg); }
+  80% { transform: translate(3px, 1px) rotate(0.5deg); }
+}
+.ft-shake-soft { animation: ft-shake-soft-loop 0.35s linear infinite; }
+.ft-shake-hard { animation: ft-shake-hard-loop 0.2s linear infinite; }
+
+@keyframes ft-screen-shake-kf {
+  0%, 100% { transform: translate(0, 0); }
+  15% { transform: translate(-9px, 4px); }
+  30% { transform: translate(8px, -5px); }
+  45% { transform: translate(-7px, -3px); }
+  60% { transform: translate(6px, 4px); }
+  75% { transform: translate(-4px, 2px); }
+  90% { transform: translate(3px, -1px); }
+}
+.ft-screen-shake { animation: ft-screen-shake-kf 0.4s ease-in-out; }
+
+@keyframes ft-pass-ring-kf {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.9; }
+  100% { transform: translate(-50%, -50%) scale(1.7); opacity: 0; }
+}
+.ft-pass-ring { animation: ft-pass-ring-kf 0.9s ease-out forwards; }
+
+@keyframes ft-debris-kf {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) rotate(var(--rot)); opacity: 0; }
+}
+.ft-debris { animation: ft-debris-kf 0.8s ease-out forwards; }
+
+@keyframes ft-loosen-slide-kf {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(-6px); }
+  60% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+.ft-loosen-slide { animation: ft-loosen-slide-kf 1s ease-in-out; }
+
+@keyframes ft-deform-pulse-kf {
+  0%, 100% { transform: scale(1, 1); }
+  40% { transform: scale(1.06, 0.94); }
+  70% { transform: scale(0.97, 1.03); }
+}
+.ft-deform-pulse { animation: ft-deform-pulse-kf 1s ease-in-out; }
+
+@keyframes ft-sun-return-kf {
+  0% { opacity: 0; transform: scale(0.6); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.ft-sun-return { animation: ft-sun-return-kf 0.4s ease-out; }
+
+@keyframes ft-slot-break-kf {
+  0% { transform: rotate(0) translateY(0); }
+  30% { transform: rotate(-14deg) translateY(0); }
+  60% { transform: rotate(10deg) translateY(3px); opacity: 0.6; }
+  100% { transform: rotate(0) translateY(0); opacity: 1; }
+}
+.ft-slot-break { animation: ft-slot-break-kf 0.6s ease-in-out; }
+
+.ft-gauge-live { transition: width 0.15s linear; }
+
+/* 안전점검 스탬프 쾅 효과 */
+@keyframes stamp-pop-kf {
+  0% { transform: scale(2.2) rotate(-14deg); opacity: 0.4; }
+  60% { transform: scale(0.92) rotate(2deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+.anim-stamp { animation: stamp-pop-kf 0.35s ease-out; }

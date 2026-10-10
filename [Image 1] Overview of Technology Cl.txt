@@ -1,0 +1,43 @@
+[Image 1] Overview of Technology Classroom + Basic Safety Rules
+Prompt:
+Educational illustration of a Korean middle school technology classroom interior. Several students are working with wood and simple electronic components. The students wear safety goggles and work aprons, and a teacher at the front is explaining safety rules while looking at the students. Safety posters such as “Safety First!”, “Wear Protective Gear”, and “Keep Clean and Tidy” are on the wall. Tools are neatly organized on a tool rack on the wall. Overall bright and calm colors, textbook-style flat educational illustration, no graphic injuries, emphasizing a safe and orderly learning environment.
+
+
+[Image 2] Cutting Tools – Cuts and Pinch Injuries (Rank 1)
+Prompt:
+Educational illustration of a Korean middle school student using a saw and a utility knife to cut a piece of wood. One student wears gloves and safety goggles and uses the saw correctly with both hands. Another student, without gloves, is pulling a utility knife toward their own body in a dangerous way, while the teacher raises a hand and says “Stop!” to warn the student. A small “Watch your hands!” safety sign is visible nearby. No blood or open wounds are shown; expressions and body language show it is a risky situation. Bright, neat colors, textbook-style flat educational illustration.
+
+
+[Image 3] Hot Tools (Glue Gun, Soldering Iron) – Burns (Rank 2)
+Prompt:
+Educational illustration of a desk in a middle school makerspace with a hot glue gun and a soldering iron. One female student, wearing heat-resistant gloves, carefully places the soldering iron in its stand. Another male student carelessly lays the hot glue gun on the desk so that the hot nozzle sticks out beyond the protective mat, creating a dangerous situation. The students’ facial expressions show mild surprise and tension, but not horror. Small “High Temperature” icons with tiny flame symbols float near the tips of the tools. No burn wounds are shown. Bright, clean colors, textbook-style flat educational illustration emphasizing warning and correct usage.
+
+
+[Image 4] Slipping and Tripping – Messy Floor (Rank 3)
+Prompt:
+Educational illustration showing the aisle between workbenches and the corridor in a middle school technology classroom. Wood scraps, screws, tape pieces, and small boxes are scattered on the floor. One student is carefully looking around and picking up materials from the floor. Another student is running in a hurry, stepping on a screw and about to lose balance and nearly fall forward. The teacher behind them is reaching out a hand with a worried face, as if saying “Don’t run!”. No dramatic injuries, just a clear message that cleaning and tidiness are important. Bright, simple textbook-style flat educational illustration.
+
+
+[Image 5] Eye Protection – Flying Debris and Dust (Rank 4)
+Prompt:
+Educational illustration of middle school students cutting an acrylic sheet with a power tool. One student wears clear safety goggles and a mask while holding the acrylic sheet, and small fragments are shown flying near the tool. Another student standing nearby without goggles watches too closely, then suddenly closes their eyes and covers one eye with a hand in surprise. A large “Wear Eye Protection” safety icon is visible in the background. No visible eye injury, only expressions and gestures indicate the danger. Soft colors, textbook-style flat educational illustration for school materials.
+
+
+[Image 6] Electrical Safety – Overloaded Power Strip and Shock Prevention (Rank 5)
+Prompt:
+Educational illustration centered on a wall outlet and power strip in a middle school makerspace. Several laptops, a 3D printer, and a soldering iron are all plugged into a single power strip, overloading it. Small warning symbols with tiny sparks appear around some of the plugs. One student with wet hands is about to grab a plug and looks startled, while the teacher quickly reaches out to stop the student and explain proper electrical safety. A piece of damaged cable with exposed wires on the floor is marked with a “Do Not Use” sign. No actual electric shock is shown; the focus is on potential risk and prevention. Bright and organized textbook-style flat educational illustration.
+
+
+[Image 7] Chemical Materials, Sprays, Resin – Ventilation and PPE (Rank 6)
+Prompt:
+Educational illustration of a middle school makerspace where students use spray paint and resin. One student near a window uses spray paint on a small project while wearing a mask and gloves, and a ventilation fan is running. Another student at a desk uses silicone adhesive without gloves or a mask and looks uncomfortable, holding their nose because of the strong smell. The window is open, and posters on the wall say “Ventilation Required” and “Wear Protective Equipment”. The scene shows correct and incorrect behavior side by side, without exaggerated harm. Bright, clean colors, textbook-style flat educational illustration.
+
+
+[Image 8] Group Project Behavior – Jokes, Filming, and Safety (Rank 7)
+Prompt:
+Educational illustration of middle school students working on group projects in a makerspace. Two students in one team are seriously discussing their design plan using a drawing. Another student nearby is playing with a tool, spinning it on a finger in a risky way, trying to joke around. A different student secretly uses a smartphone to record a teammate’s mistake, while the teammate looks uncomfortable and upset. The teacher watches them with a slightly stern expression and points to a sign that says “No Horseplay During Practice”. No physical violence; the illustration emphasizes cooperation, respectful behavior, and safety. Bright, positive textbook-style flat educational illustration.
+
+
+[Image 9] Summary Infographic – Types of Safety Accidents
+Prompt:
+Infographic-style educational illustration summarizing safety accident types in middle school technology classrooms and makerspaces. The image is divided into 6–7 simple sections, each with an icon: (1) a knife and saw icon for cuts and pinch injuries; (2) a hot glue gun icon for burns; (3) a falling person silhouette for slips and trips; (4) safety goggles with small flying debris for eye protection; (5) an outlet and lightning symbol for electrical accidents; (6) a spray can and mask icon for chemical hazards; (7) people and a speech bubble icon for group conflict and misbehavior. Short Korean keywords such as “베임·찍힘”, “화상”, “미끄러짐” are written below each icon. Pastel color palette, clean and simple design, with text and icons clearly readable, modern flat style suitable for insertion into a school textbook.
