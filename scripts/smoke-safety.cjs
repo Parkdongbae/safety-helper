@@ -121,6 +121,7 @@ ok(parsed.sheet === "https://script.google.com/x/exec", "student params round-tr
 ok(parsed.classId === "c1", "student params round-trip classId");
 ok(parsed.className === "3학년 1반", "student params round-trip className");
 ok(buildStudentUrl("https://example.com", "", "", "").indexOf("?") === -1, "student url empty params");
+ok(buildStudentUrl("https://u.github.io", "s", "", "", "/safety-helper/") === "https://u.github.io/safety-helper/?sheet=s", "student url with base path");
 ok(Object.keys(parseStudentParams("")).length === 0, "student params empty");
 ok(Object.keys(parseStudentParams("?foo=bar")).length === 0, "student params ignores unknown");
 

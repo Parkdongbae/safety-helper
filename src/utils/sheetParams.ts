@@ -26,11 +26,13 @@ export function parseStudentParams(search: string): StudentParams {
   return out;
 }
 
-export function buildStudentUrl(origin: string, scriptUrl: string, classId: string, className: string): string {
+export function buildStudentUrl(origin: string, scriptUrl: string, classId: string, className: string, basePath = "/"): string {
   const q = new URLSearchParams();
   if (scriptUrl.trim()) q.set("sheet", scriptUrl.trim());
   if (classId.trim()) q.set("class", classId.trim());
   if (className.trim()) q.set("classname", className.trim());
   const query = q.toString();
-  return `${origin.replace(/\/$/, "")}/${query ? `?${query}` : ""}`;
+  const base = basePath.replace(/^\/+|\/+$/g, "");
+  const prefix = base ? `/${base}/` : "/";
+  return `${origin.replace(/\/$/, "")}${prefix}${query ? `?${query}` : ""}`;
 }

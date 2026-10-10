@@ -52,6 +52,7 @@ export function SafetyTeacherPage() {
         scriptUrl,
         qrClassId,
         classes.find((c) => c.id === qrClassId) ? classLabel(classes.find((c) => c.id === qrClassId)!) : "",
+        import.meta.env.BASE_URL,
       )
     : "";
 

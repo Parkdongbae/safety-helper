@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { SafetyHomePage } from "./pages/SafetyHomePage";
 import { RoomCheckPage } from "./pages/RoomCheckPage";
 import { SafetyQuizPage } from "./pages/SafetyQuizPage";
@@ -19,7 +19,7 @@ function TeacherRoute() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<SafetyHomePage />} />
         <Route path="/room/:roomId" element={<RoomCheckPage />} />
@@ -30,6 +30,6 @@ export default function App() {
         <Route path="/weed/result" element={<WeedResultPage />} />
         <Route path="*" element={<SafetyHomePage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
